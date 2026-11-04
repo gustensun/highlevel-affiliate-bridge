@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HighLevel × Gusten Sun — 30-Day Extended Free Trial</title>
+<meta name="description" content="HighLevel and Gusten Sun have teamed up: get a 30-day free trial of the Agency Unlimited plan instead of the usual 14, plus a free kickoff call with the HighLevel team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy-950:#03101d;--navy-900:#061a2e;--navy-800:#0b2340;--navy-700:#12314f;
+  --ink:#0b1626;--ink-2:#2a3a4e;--mute:#6b7a8c;--line:#e3e8ef;
+  --paper:#f6f8fb;--paper-2:#eef2f7;--white:#fff;
+  --blue:#2f7cf6;--blue-2:#1f63d6;--blue-soft:#a9c8ff;--sky:#9ad0ff;
+  --yellow:#f7c948;--green:#30c27b;--gold:#e8b24a;
+  --text-dim:rgba(255,255,255,.66);--text-dimmer:rgba(255,255,255,.42);
+  --stroke:rgba(255,255,255,.1);--stroke-2:rgba(255,255,255,.16);
+  --r-xl:28px;--r-lg:20px;--r-md:14px;--r-sm:10px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Geist,-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;background:var(--navy-950);color:#fff;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.serif{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400}
+.mono{font-family:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+.wrap{width:min(1180px,calc(100% - 48px));margin:0 auto}
+@media(max-width:640px){.wrap{width:calc(100% - 32px)}}
+
+/* grain + glow */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.045;mix-blend-mode:overlay;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* eyebrow */
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:"Geist Mono",monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--sky);font-weight:500}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor;opacity:.7}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::before{display:none}
+.eyebrow.center span{display:flex;align-items:center;gap:12px}
+.eyebrow.center span::before,.eyebrow.center span::after{content:"";width:28px;height:1px;background:currentColor;opacity:.7}
+.light .eyebrow{color:var(--blue-2)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border-radius:14px;font-weight:600;font-size:15px;letter-spacing:-.01em;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .25s;white-space:nowrap;position:relative;overflow:hidden}
+.btn svg{width:16px;height:16px;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+.btn-primary{background:linear-gradient(180deg,#3b86ff 0%,#2a74ef 100%);color:#fff;box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 10px 30px -8px rgba(47,124,246,.65),0 0 0 1px rgba(47,124,246,.4)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 18px 40px -10px rgba(47,124,246,.8),0 0 0 1px rgba(47,124,246,.5)}
+.btn-primary::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);transform:translateX(-120%);transition:transform .9s var(--ease)}
+.btn-primary:hover::after{transform:translateX(120%)}
+.btn-ghost{background:rgba(255,255,255,.04);color:#fff;border:1px solid var(--stroke-2);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:rgba(255,255,255,.08);transform:translateY(-2px)}
+.btn-sm{height:42px;padding:0 18px;font-size:14px;border-radius:11px}
+.light .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.light .btn-ghost:hover{background:var(--paper-2)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);background:rgba(3,16,29,.62);border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:19px;letter-spacing:-.02em}
+.logo svg{width:30px;height:28px}
+.nav-links{display:flex;gap:34px;font-size:14px;color:var(--text-dim);font-weight:500}
+.nav-links a{position:relative;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--sky);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-right{display:flex;align-items:center;gap:14px}
+.burger{display:none;width:42px;height:42px;border-radius:11px;border:1px solid var(--stroke-2);align-items:center;justify-content:center}
+.burger span{display:block;width:18px;height:2px;background:#fff;position:relative;transition:.3s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:#fff;transition:.3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.mobile-menu{display:none;position:fixed;inset:72px 0 0;z-index:99;background:rgba(3,16,29,.96);backdrop-filter:blur(20px);padding:28px 24px;flex-direction:column;gap:6px}
+.mobile-menu a{font-size:22px;font-weight:600;padding:14px 0;border-bottom:1px solid var(--stroke)}
+.mobile-menu .btn{margin-top:22px}
+body.menu-open .mobile-menu{display:flex}
+body.menu-open .burger span{background:transparent}
+body.menu-open .burger span::before{top:0;transform:rotate(45deg)}
+body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
+@media(max-width:900px){.nav-links,.nav-right .btn{display:none}.burger{display:flex}}
+
+/* hero */
+.hero{position:relative;padding:72px 0 96px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+ radial-gradient(900px 520px at 78% 12%,rgba(47,124,246,.28),transparent 60%),
+ radial-gradient(700px 480px at 8% 85%,rgba(28,90,180,.22),transparent 60%),
+ radial-gradient(500px 300px at 50% 100%,rgba(154,208,255,.08),transparent 60%);pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+ background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;
+ -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,#000 20%,transparent 75%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:10px;height:34px;padding:0 6px 0 14px;border-radius:999px;border:1px solid var(--stroke-2);background:rgba(255,255,255,.04);font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:28px;backdrop-filter:blur(6px)}
+.pill b{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border-radius:999px;background:rgba(247,201,72,.14);color:var(--yellow);font-family:"Geist Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.pill b::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--yellow);box-shadow:0 0 10px var(--yellow)}
+.pill i{font-style:normal;color:var(--text-dimmer)}
+h1{font-size:clamp(44px,6.2vw,78px);line-height:1.02;letter-spacing:-.035em;font-weight:700;margin-bottom:26px}
+h1 .serif{color:var(--sky);font-size:1.08em;letter-spacing:-.02em}
+.lede{font-size:18px;color:var(--text-dim);max-width:560px;line-height:1.6;margin-bottom:34px}
+.lede b{color:#fff;font-weight:600}
+.compare{background:rgba(255,255,255,.035);border:1px solid var(--stroke);border-radius:var(--r-lg);padding:20px 22px;max-width:560px;margin-bottom:30px;backdrop-filter:blur(10px)}
+.bar{display:grid;grid-template-columns:1fr auto;gap:8px 14px;align-items:center;font-size:13px;font-weight:500}
+.bar+.bar{margin-top:14px}
+.bar .label{color:var(--text-dim)}
+.bar .val{font-family:"Geist Mono",monospace;font-size:12px;color:var(--text-dim)}
+.bar .track{grid-column:1/-1;height:6px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;width:0;transition:width 1.4s var(--ease)}
+.bar.std .fill{background:rgba(255,255,255,.28)}
+.bar.gus .label,.bar.gus .val{color:#fff;font-weight:600}
+.bar.gus .fill{background:linear-gradient(90deg,#2f7cf6,#8fd0ff);box-shadow:0 0 18px rgba(47,124,246,.6)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.checks{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;color:var(--text-dim);font-weight:500}
+.checks span{display:inline-flex;align-items:center;gap:7px}
+.checks svg{width:15px;height:15px;color:var(--green)}
+
+/* hero visual */
+.visual{position:relative;perspective:1600px}
+.photo-card{position:relative;border-radius:var(--r-xl);overflow:hidden;aspect-ratio:4/4.6;transform:rotateY(-4deg) rotateX(2deg);transform-style:preserve-3d;box-shadow:0 50px 100px -30px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.08),0 0 80px -20px rgba(47,124,246,.35);transition:transform 1.2s var(--ease)}
+.visual:hover .photo-card{transform:rotateY(0) rotateX(0)}
+.photo-card img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;transform:scale(1.02);transition:transform 1.6s var(--ease)}
+.visual:hover .photo-card img{transform:scale(1.06)}
+.photo-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,16,29,0) 45%,rgba(3,16,29,.92) 100%)}
+.photo-card .ring{position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14),inset 0 1px 0 rgba(255,255,255,.25);pointer-events:none;z-index:2}
+.photo-card .caption{position:absolute;left:26px;right:26px;bottom:24px;z-index:3}
+.photo-card .caption strong{display:block;font-size:22px;font-weight:700;letter-spacing:-.02em}
+.photo-card .caption small{display:block;font-family:"Geist Mono",monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--sky);margin-top:6px}
+.float{position:absolute;z-index:5;display:flex;align-items:center;gap:12px;padding:12px 16px 12px 12px;border-radius:16px;background:rgba(8,24,44,.78);border:1px solid var(--stroke-2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 20px 50px -20px rgba(0,0,0,.7);animation:floaty 6s ease-in-out infinite}
+.float .ic{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:rgba(47,124,246,.18);color:var(--sky);flex:none}
+.float .ic svg{width:18px;height:18px}
+.float strong{display:block;font-size:14px;font-weight:600;letter-spacing:-.01em}
+.float span{display:block;font-size:11.5px;color:var(--text-dim);margin-top:1px}
+.float.a{top:28px;left:-28px;animation-delay:-1s}
+.float.b{right:-26px;bottom:88px;animation-delay:-3s}
+.float.b .ic{background:rgba(48,194,123,.16);color:var(--green)}
+.float.c{top:13%;right:-34px;padding:8px;border-radius:14px;animation-delay:-5s}
+.float.c img{width:64px;height:48px;object-fit:cover;border-radius:8px}
+.float.c strong{font-size:12.5px}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media(max-width:1000px){.hero .wrap{grid-template-columns:1fr;gap:56px}.visual{max-width:520px;margin:0 auto;width:100%}.float.a{left:-8px}.float.b{right:-8px}.float.c{display:none}}
+@media(max-width:640px){.hero{padding:48px 0 72px}.float{padding:10px 12px 10px 10px}.float .ic{width:34px;height:34px}.float strong{font-size:13px}.photo-card{transform:none}}
+
+/* logos strip */
+.strip{border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke);background:rgba(255,255,255,.015)}
+.strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 0;flex-wrap:wrap}
+.strip .stat{display:flex;align-items:baseline;gap:10px}
+.strip .stat b{font-size:26px;font-weight:700;letter-spacing:-.03em}
+.strip .stat b.serif{color:var(--sky);font-size:30px}
+.strip .stat span{font-size:13px;color:var(--text-dim)}
+@media(max-width:800px){.strip .wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px;padding:26px 0}.strip .stat{flex-direction:column;align-items:flex-start;gap:2px}.strip .stat b{font-size:28px}}
+
+/* generic section */
+section{position:relative}
+.sec{padding:120px 0}
+.sec-head{max-width:720px;margin:0 auto 56px;text-align:center}
+.sec-head h2,.h2{font-size:clamp(34px,4.4vw,56px);line-height:1.06;letter-spacing:-.03em;font-weight:700;margin:18px 0 18px}
+.h2 .serif,.sec-head .serif{color:var(--sky);font-size:1.08em}
+.light .h2 .serif,.light .sec-head .serif{color:var(--blue-2)}
+.sec-head p,.sub{font-size:17px;color:var(--text-dim);line-height:1.6}
+.light{background:var(--paper);color:var(--ink)}
+.light .sub,.light .sec-head p{color:var(--mute)}
+@media(max-width:640px){.sec{padding:84px 0}}
+
+/* gallery */
+.gallery{padding:110px 0 100px;overflow:hidden}
+.gallery .sec-head{margin-bottom:48px}
+.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:220px;gap:14px}
+.tile{position:relative;border-radius:var(--r-lg);overflow:hidden;background:var(--navy-800);box-shadow:0 0 0 1px rgba(255,255,255,.07)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease),filter .6s}
+.tile:hover img{transform:scale(1.05)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(3,16,29,.85));opacity:.9;transition:opacity .5s}
+.tile .cap{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;display:flex;flex-direction:column;gap:3px}
+.tile .cap b{font-size:14.5px;font-weight:600;letter-spacing:-.01em}
+.tile .cap span{font-family:"Geist Mono",monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--sky)}
+.t1{grid-column:span 5;grid-row:span 2}.t2{grid-column:span 4}.t3{grid-column:span 3}.t4{grid-column:span 3}.t5{grid-column:span 4}.t6{grid-column:span 7}.t7{grid-column:span 5}
+.t1 img{object-position:50% 30%}.t2 img{object-position:50% 35%}.t3 img{object-position:50% 30%}.t4 img{object-position:50% 35%}.t5 img{object-position:50% 30%}.t6 img{object-position:50% 40%}.t7 img{object-position:50% 40%}
+@media(max-width:900px){.bento{grid-template-columns:repeat(6,1fr);grid-auto-rows:200px}.t1{grid-column:span 6;grid-row:span 2}.t2,.t3,.t4,.t5{grid-column:span 3}.t6,.t7{grid-column:span 6}}
+@media(max-width:560px){.bento{grid-template-columns:1fr 1fr;grid-auto-rows:170px;gap:10px}.t1{grid-column:span 2;grid-row:span 2}.t2,.t3,.t4,.t5{grid-column:span 1}.t6,.t7{grid-column:span 2}}
+
+/* watch */
+.watch{padding:40px 0 120px}
+.player{position:relative;border-radius:var(--r-xl);overflow:hidden;aspect-ratio:16/9;background:var(--navy-800);box-shadow:0 60px 120px -40px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.1),0 0 120px -30px rgba(47,124,246,.35);cursor:pointer}
+.player img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.player:hover img{transform:scale(1.03)}
+.player::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,16,29,.05),rgba(3,16,29,.45));transition:opacity .4s}
+.player .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:92px;height:92px;border-radius:50%;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(14px);display:grid;place-items:center;z-index:2;transition:transform .45s var(--ease),background .3s}
+.player .play::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:1px solid rgba(255,255,255,.25);animation:pulse 2.4s ease-out infinite}
+.player .play svg{width:30px;height:30px;margin-left:5px;fill:#fff}
+.player:hover .play{transform:translate(-50%,-50%) scale(1.08);background:rgba(47,124,246,.9)}
+@keyframes pulse{0%{transform:scale(.8);opacity:.9}100%{transform:scale(1.5);opacity:0}}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
+.player .dur{position:absolute;left:22px;bottom:20px;z-index:2;display:flex;align-items:center;gap:10px;font-family:"Geist Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(3,16,29,.6);border:1px solid var(--stroke-2);padding:8px 12px;border-radius:999px;backdrop-filter:blur(8px)}
+.player .dur i{width:7px;height:7px;border-radius:50%;background:#ff4d4f;box-shadow:0 0 10px #ff4d4f}
+
+/* vsl */
+.vsl{padding:24px 0 110px}
+.vsl .sec-head{max-width:800px;margin-bottom:44px}
+.vsl .player{max-width:1000px;margin:0 auto}
+.vsl-cta{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:36px}
+.vsl-cta span{font-size:13px;color:var(--text-dim);font-weight:500}
+@media(max-width:640px){.vsl{padding:8px 0 84px}}
+
+/* offer */
+.offer .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.offer .sticky{position:sticky;top:100px}
+.offer .h2{margin:18px 0 18px}
+.offer .sub{margin-bottom:34px;max-width:440px}
+.price-card{position:relative;border-radius:var(--r-xl);padding:30px;color:#fff;background:linear-gradient(160deg,#0f2b4f 0%,#071a30 60%,#03101d 100%);box-shadow:0 40px 90px -30px rgba(6,26,46,.6),0 0 0 1px rgba(255,255,255,.08) inset;overflow:hidden}
+.price-card::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 220px at 90% 0%,rgba(47,124,246,.4),transparent 60%);pointer-events:none}
+.price-card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;position:relative}
+.price-card .top .eyebrow{color:var(--sky)}
+.price-card .top .hl{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--text-dim)}
+.price-card .top .hl svg{width:18px;height:17px}
+.rows{position:relative;border-top:1px solid var(--stroke);}
+.row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--stroke);font-size:14.5px}
+.row .k{color:var(--text-dim)}
+.row .v{font-weight:600}
+.row .v s{color:var(--text-dimmer);font-weight:400;margin-right:8px}
+.row .v.good{color:var(--green)}
+.total{display:flex;justify-content:space-between;align-items:baseline;padding:22px 0 6px;position:relative}
+.total .k{font-size:15px;font-weight:600}
+.total .v{font-size:48px;font-weight:800;letter-spacing:-.04em;line-height:1}
+.price-card .btn{width:100%;margin-top:16px;position:relative}
+.price-card .fine{text-align:center;font-size:12px;color:var(--text-dimmer);margin-top:14px;position:relative}
+.feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.feat{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .3s}
+.feat:hover{transform:translateY(-4px);box-shadow:0 24px 50px -24px rgba(11,22,38,.25);border-color:#cfd9e6}
+.feat.wide{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+.feat .ic{width:44px;height:44px;border-radius:12px;background:#eaf2ff;color:var(--blue-2);display:grid;place-items:center;margin-bottom:18px}
+.feat.wide .ic{margin:0}
+.feat .ic svg{width:20px;height:20px}
+.feat h4{font-size:17px;font-weight:600;letter-spacing:-.015em;margin-bottom:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.feat p{font-size:14px;color:var(--mute);line-height:1.55}
+.tag{display:inline-flex;align-items:center;height:22px;padding:0 9px;border-radius:999px;background:#fff4d6;color:#8a5a00;font-family:"Geist Mono",monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+@media(max-width:1000px){.offer .wrap{grid-template-columns:1fr;gap:40px}.offer .sticky{position:static}}
+@media(max-width:600px){.feat-grid{grid-template-columns:1fr}.feat.wide{grid-template-columns:1fr}.feat.wide .ic{margin-bottom:14px}.price-card{padding:24px}.total .v{font-size:40px}}
+
+/* what is */
+.what{padding:0 0 120px}
+.what .box{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r-xl);padding:52px}
+.what .h2{font-size:clamp(30px,3.4vw,42px)}
+.what .sub{margin-top:14px;font-size:16px}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chip{display:flex;align-items:center;gap:12px;padding:18px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--paper);font-size:14.5px;font-weight:600;letter-spacing:-.01em;transition:transform .4s var(--ease),background .3s}
+.chip:hover{transform:translateY(-3px);background:#fff}
+.chip .ic{width:36px;height:36px;border-radius:10px;background:#eaf2ff;color:var(--blue-2);display:grid;place-items:center;flex:none}
+.chip .ic svg{width:17px;height:17px}
+@media(max-width:900px){.what .box{grid-template-columns:1fr;gap:32px;padding:32px}}
+@media(max-width:480px){.chips{grid-template-columns:1fr}}
+
+/* how */
+.how{padding:120px 0}
+.how .sec-head{text-align:left;margin:0 0 48px;max-width:860px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{position:relative;padding:32px 28px;border-radius:var(--r-lg);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--stroke);overflow:hidden;transition:transform .5s var(--ease),border-color .3s}
+.step:hover{transform:translateY(-4px);border-color:var(--stroke-2)}
+.step::before{content:"";position:absolute;inset:0;background:radial-gradient(260px 140px at 0% 0%,rgba(47,124,246,.18),transparent 70%);opacity:0;transition:opacity .5s}
+.step:hover::before{opacity:1}
+.step .n{font-family:"Geist Mono",monospace;font-size:12px;letter-spacing:.2em;color:var(--sky);margin-bottom:46px;display:flex;align-items:center;gap:12px}
+.step .n::after{content:"";flex:1;height:1px;background:var(--stroke)}
+.step h4{font-size:20px;font-weight:600;letter-spacing:-.02em;margin-bottom:10px}
+.step p{font-size:14.5px;color:var(--text-dim);line-height:1.6}
+.notice{margin-top:18px;display:flex;gap:14px;align-items:flex-start;padding:18px 22px;border-radius:var(--r-md);background:rgba(47,124,246,.08);border:1px solid rgba(47,124,246,.25);font-size:13.5px;color:var(--text-dim);line-height:1.55}
+.notice svg{width:18px;height:18px;flex:none;color:var(--sky);margin-top:2px}
+.notice a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.steps{grid-template-columns:1fr}.step .n{margin-bottom:24px}}
+
+/* faq */
+.faq .sec-head{text-align:left;margin:0 0 40px}
+.faq-list{max-width:860px;border-top:1px solid var(--line)}
+.q{border-bottom:1px solid var(--line)}
+.q button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;text-align:left;font-size:18px;font-weight:600;letter-spacing:-.015em}
+.q button .pm{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;flex:none;transition:transform .4s var(--ease),background .3s}
+.q button .pm svg{width:14px;height:14px}
+.q.open button .pm{transform:rotate(45deg);background:var(--ink);color:#fff;border-color:var(--ink)}
+.q .a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.q .a p{padding:0 0 24px;color:var(--mute);font-size:15.5px;line-height:1.65;max-width:720px}
+.q .a p+p{margin-top:-10px}
+
+/* final cta */
+.final{position:relative;padding:160px 0;overflow:hidden;text-align:center}
+.final .bg{position:absolute;inset:0}
+.final .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;filter:saturate(.85)}
+.final .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,16,29,.78),rgba(3,16,29,.62) 50%,rgba(3,16,29,.95)),radial-gradient(700px 400px at 50% 50%,rgba(47,124,246,.22),transparent 70%)}
+.final .wrap{position:relative;max-width:820px}
+.final h2{font-size:clamp(38px,5.4vw,66px);line-height:1.04;letter-spacing:-.035em;font-weight:700;margin:18px 0 18px}
+.final h2 .serif{color:var(--sky);font-size:1.08em}
+.final p{color:var(--text-dim);font-size:18px;max-width:560px;margin:0 auto 34px}
+.final .small{font-family:"Geist Mono",monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-dimmer);margin-top:18px}
+.final .btn-primary{height:60px;padding:0 34px;font-size:16px}
+
+/* footer */
+footer{border-top:1px solid var(--stroke);padding:40px 0;font-size:13px;color:var(--text-dimmer)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer .links{display:flex;gap:22px;flex-wrap:wrap}
+footer a:hover{color:#fff}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.float{animation:none}.player .play::before{animation:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="hl" viewBox="0 0 30 28">
+    <path d="M6.2 1.2 11.6 8.4H8.6V26H3.8V8.4H.8z" fill="#F6C343"/>
+    <path d="M15 8 20.4 15.2h-3V26h-4.8V15.2H9.6z" fill="#2F7CF6"/>
+    <path d="M23.8 1.2 29.2 8.4h-3V26h-4.8V8.4h-3z" fill="#30C27B"/>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 16 16"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="check" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="currentColor" opacity=".18"/><path d="M4.8 8.2l2.2 2.2 4.2-4.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="HighLevel"><svg><use href="#hl"/></svg>HighLevel</a>
+    <nav class="nav-links">
+      <a href="#watch">Watch</a><a href="#the-offer">The offer</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-primary btn-sm" href="https://www.gohighlevel.com/gusten-sun?fp_ref=freedomfunnels57" target="_blank" rel="noopener">Start 30-day trial <svg><use href="#arrow"/></svg></a>
+      <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('menu-open')"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" onclick="document.body.classList.remove('menu-open')">
+  <a href="#watch">Watch</a><a href="#the-offer">The offer</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a>
+  <a class="btn btn-primary" href="https://www.gohighlevel.com/gusten-sun?fp_ref=freedomfunnels57" target="_blank" rel="noopener">Start 30-day trial <svg><use href="#arrow"/></svg></a>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="pill rv"><b>Partner offer</b> HighLevel <i>×</i> Gusten Sun</div>
+      <h1 class="rv d1">Any friend of Gusten's is a <span class="serif">friend of ours.</span></h1>
+      <p class="lede rv d2">HighLevel and Gusten have teamed up on an offer for new customers: <b>a 30-day free trial</b> instead of the usual 14, so you can get fully up and running before your first payment.</p>
+      <div class="compare rv d2">
+        <div class="bar std"><span class="label">Standard trial</span><span class="val">14 days</span><div class="track"><div class="fill" data-w="46%"></div></div></div>
+        <div class="bar gus"><span class="label">With Gusten</span><span class="val">30 days</span><div class="track"><div class="fill" data-w="100%"></div></div></div>
+      </div>
+      <div class="cta-row rv d3">
+        <a class="btn btn-primary" href="https://www.gohighlevel.com/gusten-sun?fp_ref=freedomfunnels57" target="_blank" rel="noopener">Start an extended free trial <svg><use href="#arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#the-offer">See what's included</a>
+      </div>
+      <div class="checks rv d3">
+        <span><svg><use href="#check"/></svg>Nothing billed today</span>
+        <span><svg><use href="#check"/></svg>Agency Unlimited plan</span>
+        <span><svg><use href="#check"/></svg>Free kickoff call</span>
+      </div>
+    </div>
+
+    <div class="visual rv d1">
+      <div class="float a">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <div><strong>30 days free</strong><span>16 more than standard</span></div>
+      </div>
+      <div class="float c">
+        <img src="images/2.jpg" alt="SaaSpreneur Diamond award on stage">
+        <div><strong>SaaSpreneur Diamond</strong><span>Awarded on stage</span></div>
+      </div>
+      <div class="photo-card">
+        <img src="images/1.webp" alt="Gusten Sun with the HighLevel team in front of a HighLevel backdrop" fetchpriority="high">
+        <div class="ring"></div>
+        <div class="caption"><strong>Gusten Sun</strong><small>HighLevel Affiliate Partner</small></div>
+      </div>
+      <div class="float b">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
+        <div><strong>Kickoff call</strong><span>With the HighLevel team</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WATCH -->
+<section class="watch vsl" id="watch">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow center"><span>Watch this first</span></div>
+      <h2>One money model + HighLevel = <span class="serif">a $10,000/month business.</span></h2>
+      <p>Gusten breaks down the one money model he runs on HighLevel, and how to build it yourself during your 30-day trial.</p>
+    </div>
+    <div class="player rv d1" id="player" role="button" tabindex="0" aria-label="Play video: 1 Money Model + HighLevel = $10,000/m Business">
+      <img src="https://img.youtube.com/vi/OtdGngHM5MU/maxresdefault.jpg" alt="1 Money Model + HighLevel = $10,000/m Business - Gusten Sun" loading="lazy">
+      <div class="dur"><i></i> Watch before you start</div>
+      <div class="play"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></div>
+    </div>
+    <div class="vsl-cta rv d2">
+      <a class="btn btn-primary" href="https://www.gohighlevel.com/gusten-sun?fp_ref=freedomfunnels57" target="_blank" rel="noopener">Start your 30-day trial <svg><use href="#arrow"/></svg></a>
+      <span>Nothing billed today · Free kickoff call included</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <div class="stat"><b>30</b><span>days free, not 14</span></div>
+    <div class="stat"><b>$0</b><span>due today</span></div>
+    <div class="stat"><b class="serif">Unlimited</b><span>sub-accounts, sites, contacts</span></div>
+    <div class="stat"><b>1:1</b><span>kickoff call with HighLevel</span></div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow center"><span>Inside the HighLevel world</span></div>
+      <h2>Not just an affiliate link. <span class="serif">A partner.</span></h2>
+      <p>Gusten builds on HighLevel, speaks at HighLevel's own events, and works directly with the team. You're signing up through someone they know.</p>
+    </div>
+    <div class="bento">
+      <div class="tile t1 rv"><img src="images/8.webp" alt="Gusten Sun speaking on stage in front of the HighLevel logo"><div class="cap"><b>On the main stage</b><span>HighLevel event</span></div></div>
+      <div class="tile t2 rv d1"><img src="images/2.jpg" alt="Gusten Sun receiving the SaaSpreneur Diamond award with the HighLevel team"><div class="cap"><b>SaaSpreneur Diamond Award</b><span>1,000+ SaaS sub-accounts</span></div></div>
+      <div class="tile t3 rv d2"><img src="images/3.webp" alt="Gusten Sun on stage at SaaSpreneur London"><div class="cap"><b>Keynote</b><span>SaaSpreneur London</span></div></div>
+      <div class="tile t4 rv d1"><img src="images/7.webp" alt="Gusten Sun presenting on stage"><div class="cap"><b>Teaching live</b><span>HighLevel stage</span></div></div>
+      <div class="tile t5 rv d2"><img src="images/5.webp" alt="Gusten Sun with the HighLevel team at a SaaSpreneur event"><div class="cap"><b>With the HighLevel team</b><span>SaaSpreneur Live</span></div></div>
+      <div class="tile t6 rv d1"><img src="images/4.webp" alt="Gusten Sun with the HighLevel team at SaaSpreneur London"><div class="cap"><b>Backstage with the team</b><span>SaaSpreneur London</span></div></div>
+      <div class="tile t7 rv d2"><img src="images/6.webp" alt="Gusten Sun speaking at a HighLevel event"><div class="cap"><b>Workshop session</b><span>HighLevel event</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="light sec offer" id="the-offer">
+  <div class="wrap">
+    <div class="sticky">
+      <div class="eyebrow rv">The offer</div>
+      <h2 class="h2 rv d1">The full Unlimited plan, <span class="serif">on the house</span> for a month.</h2>
+      <p class="sub rv d2">Everything you need to get your agency up and running, with more than twice the usual time to set it up properly.</p>
+      <div class="price-card rv d2">
+        <div class="top"><span class="eyebrow">Your offer</span><span class="hl"><svg><use href="#hl"/></svg>HighLevel</span></div>
+        <div class="rows">
+          <div class="row"><span class="k">Plan</span><span class="v">Agency Unlimited</span></div>
+          <div class="row"><span class="k">Free trial</span><span class="v"><s>14 days</s>30 days</span></div>
+          <div class="row"><span class="k">Kickoff call</span><span class="v good">Included</span></div>
+          <div class="row"><span class="k">After the trial</span><span class="v">$297/mo</span></div>
+        </div>
+        <div class="total"><span class="k">Due today</span><span class="v">$0</span></div>
+        <a class="btn btn-primary" href="https://www.gohighlevel.com/gusten-sun?fp_ref=freedomfunnels57" target="_blank" rel="noopener">Claim the 30-day trial <svg><use href="#arrow"/></svg></a>
+        <p class="fine">For new HighLevel customers.</p>
+      </div>
+    </div>
+
+    <div class="feat-grid">
+      <div class="feat wide rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
+        <div><h4>Free kickoff call <span class="tag">Gusten's referrals</span></h4><p>Every referral of Gusten gets the opportunity to have a free kickoff call with the HighLevel team.</p></div>
+      </div>
+      <div class="feat rv d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg></div>
+        <h4>Unlimited sub-accounts</h4><p>Give every client their own account, with no cap as you grow.</p>
+      </div>
+      <div class="feat rv d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 14h4"/></svg></div>
+        <h4>Unlimited contacts</h4><p>Keep every lead and customer in one place without counting seats.</p>
+      </div>
+      <div class="feat rv d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 8h18M8 21V8"/></svg></div>
+        <h4>Unlimited websites</h4><p>Build as many sites and funnels as your clients need.</p>
+      </div>
+      <div class="feat rv d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <h4>Unlimited domains</h4><p>Connect every brand and client domain you manage.</p>
+      </div>
+      <div class="feat wide rv d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="3"/><path d="M8 21h8M12 18v3M7 9h6M7 13h10"/></svg></div>
+        <div><h4>White-label the entire desktop app</h4><p>Put your own brand on the platform, so clients log in to software that looks like yours.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS -->
+<section class="light what">
+  <div class="wrap">
+    <div class="box rv">
+      <div>
+        <div class="eyebrow">What is HighLevel?</div>
+        <h2 class="h2" style="margin-top:16px">All your marketing, <span class="serif">in one place.</span></h2>
+        <p class="sub">HighLevel is an all-in-one digital marketing platform. Thousands of agencies and entrepreneurs use it to give small business owners everything they need under one roof.</p>
+      </div>
+      <div class="chips">
+        <div class="chip"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg></span>Automated texts</div>
+        <div class="chip"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>Email campaigns</div>
+        <div class="chip"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></span>Funnel &amp; website builder</div>
+        <div class="chip"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h6"/></svg></span>Pipelines</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="how" id="how-it-works">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">How it works</div>
+      <h2>Up and running <span class="serif">before</span> your first payment.</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="n">01</div><h4>Claim the offer</h4><p>Sign up through Gusten's link. It takes two short steps and you won't be billed anything today.</p></div>
+      <div class="step rv d1"><div class="n">02</div><h4>Build for 30 days</h4><p>Use the full Agency Unlimited plan for a month. Set up sub-accounts, sites, campaigns and your white-label.</p></div>
+      <div class="step rv d2"><div class="n">03</div><h4>Meet the HighLevel team</h4><p>Take your free kickoff call with the HighLevel team to get set up the right way.</p></div>
+    </div>
+    <div class="notice rv d2">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
+      <span>You won't be billed anything today. After one month HighLevel charges the card on file unless you cancel. For cancellations, contact the team at <a href="https://www.gohighlevel.com/support" target="_blank" rel="noopener">gohighlevel.com/support</a>.</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="light sec faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">FAQ</div>
+      <h2>Frequently asked <span class="serif">questions.</span></h2>
+    </div>
+    <div class="faq-list rv d1">
+      <div class="q open">
+        <button aria-expanded="true">What is HighLevel?<span class="pm"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 2v10M2 7h10"/></svg></span></button>
+        <div class="a"><p>HighLevel is an all-in-one digital marketing software tool. Thousands of agencies and entrepreneurs leverage HighLevel to help small business owners have all their marketing needs in one place. Popular features include automated texts, email campaigns, the funnel and website builder, pipelines, and more.</p></div>
+      </div>
+      <div class="q">
+        <button aria-expanded="false">Why should I sign up under Gusten Sun?<span class="pm"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 2v10M2 7h10"/></svg></span></button>
+        <div class="a"><p>Because you get more than anyone signing up directly: a 30-day free trial instead of the standard 14, and a free kickoff call with the HighLevel team to get your account set up the right way from day one.</p><p>Gusten builds his own business on HighLevel and works closely with the team, so you're joining through someone who actually uses the platform every day.</p></div>
+      </div>
+      <div class="q">
+        <button aria-expanded="false">What do I get with the Unlimited plan?<span class="pm"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 2v10M2 7h10"/></svg></span></button>
+        <div class="a"><p>The HighLevel Unlimited plan ($297/mo) has everything you need to get your agency up and running: unlimited sub-accounts, unlimited domains, unlimited websites, unlimited contacts, and more. Plus, you get to white-label the entire desktop app.</p><p>All referrals of Gusten also get the opportunity to have a free kickoff call with the HighLevel team.</p></div>
+      </div>
+      <div class="q">
+        <button aria-expanded="false">Will I be charged anything today?<span class="pm"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 2v10M2 7h10"/></svg></span></button>
+        <div class="a"><p>No. Nothing is billed today. After the 30-day trial, HighLevel charges the card on file unless you cancel before then. To cancel, contact the team at gohighlevel.com/support.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="bg"><img src="images/8.webp" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="eyebrow center rv"><span>Start today</span></div>
+    <h2 class="rv d1">The white-label platform that will <span class="serif">transform your business.</span></h2>
+    <p class="rv d2">Give your clients all the tools they need to succeed in one platform, under your brand.</p>
+    <a class="btn btn-primary rv d3" href="https://www.gohighlevel.com/gusten-sun?fp_ref=freedomfunnels57" target="_blank" rel="noopener">Start an extended free trial <svg><use href="#arrow"/></svg></a>
+    <div class="small rv d3">30 days free · Nothing billed today</div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="https://www.gohighlevel.com/" target="_blank" rel="noopener" style="font-size:16px;color:#fff"><svg style="width:24px;height:22px"><use href="#hl"/></svg>HighLevel</a>
+    <div class="links">
+      <a href="https://www.gohighlevel.com/privacy-policy" target="_blank" rel="noopener">Privacy policy</a>
+      <a href="https://www.gohighlevel.com/terms-of-service" target="_blank" rel="noopener">Terms of service</a>
+      <a href="https://www.gohighlevel.com/privacy-and-security" target="_blank" rel="noopener">Privacy &amp; security</a>
+      <a href="https://www.gohighlevel.com/affiliate-policy" target="_blank" rel="noopener">Affiliate policy</a>
+    </div>
+    <span>© <span id="yr"></span> HighLevel. Partner page for Gusten Sun.</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+// reveal on scroll
+const rvs=[...document.querySelectorAll('.rv')];
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -5% 0px'});
+rvs.forEach(el=>io.observe(el));
+let tick=false;const sweep=()=>{tick=false;const lim=innerHeight*.95;rvs.forEach(el=>{if(!el.classList.contains('in')&&el.getBoundingClientRect().top<lim){el.classList.add('in');io.unobserve(el)}})};
+sweep();addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(sweep)}},{passive:true});addEventListener('load',sweep);addEventListener('resize',sweep);
+// trial bars
+const bars=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.fill').forEach(f=>f.style.width=f.dataset.w);bars.unobserve(e.target)}})},{threshold:.4});
+document.querySelectorAll('.compare').forEach(c=>bars.observe(c));
+// faq
+document.querySelectorAll('.q').forEach(q=>{const b=q.querySelector('button'),a=q.querySelector('.a');
+  const set=o=>{q.classList.toggle('open',o);b.setAttribute('aria-expanded',o);a.style.maxHeight=o?a.scrollHeight+'px':'0'};
+  set(q.classList.contains('open'));
+  b.addEventListener('click',()=>set(!q.classList.contains('open')));
+});
+// video
+const p=document.getElementById('player');
+const play=()=>{if(p.querySelector('iframe'))return;const f=document.createElement('iframe');f.src='https://www.youtube.com/embed/OtdGngHM5MU?autoplay=1&rel=0&modestbranding=1';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';f.allowFullscreen=true;f.title='1 Money Model + HighLevel = $10,000/m Business';p.appendChild(f)};
+p.addEventListener('click',play);p.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();play()}});
+// nav shade
+addEventListener('scroll',()=>{document.querySelector('.nav').style.background=scrollY>20?'rgba(3,16,29,.85)':'rgba(3,16,29,.62)'},{passive:true});
+</script>
+</body>
+</html>
